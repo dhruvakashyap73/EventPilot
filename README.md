@@ -1,6 +1,6 @@
 # EventPilot – Event Management System
 
-**EventPilot** is a full-stack web-based event management system designed to streamline the process of organizing events, managing attendees, and tracking associated tasks in real-time. It offers a clean dashboard interface and a user-friendly experience for event organizers.
+**EventPilot** is a *Full-Stack* web-based Event Management System designed to streamline the process of organizing events, managing attendees, and tracking associated tasks in real-time. It offers a clean dashboard interface and a user-friendly experience for event organizers.
 
 ---
 
