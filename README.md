@@ -49,6 +49,6 @@
 
 ---
 
-### 👨🏻‍💻 Devloped By
-Dhruva Kashyap<br>
+### 👨🏻‍💻 Developed By
+**Dhruva Kashyap**<br>
 dhruvakashyap73@gmail.com
