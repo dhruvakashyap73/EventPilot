@@ -25,7 +25,7 @@
 ### 🔹 Event Tracker
 ![Dashboard](https://github.com/dhruvakashyap73/EventPilot/blob/main/Screenshots/Event_Tracker.png)
 
-### 🔹 Recorder Events
+### 🔹 Recorded Events
 ![Dashboard](https://github.com/dhruvakashyap73/EventPilot/blob/main/Screenshots/Recorder_Events.png)
 
 ### 🔹 Attendees Tracker
