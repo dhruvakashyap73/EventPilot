@@ -16,9 +16,23 @@
 
 ## 🖼️ Screenshots
 
-> *(You can add your own screenshots here after pushing the project)*
-### 🔹 Dashboard
-![Dashboard](https://github.com/your-username/repo-name/blob/main/screenshots/dashboard.png?raw=true)
+### 🔹 Sign-up Page
+![Dashboard](https://github.com/dhruvakashyap73/EventPilot/blob/main/Screenshots/Sign_up_Page.png)
+
+### 🔹 Dashboard (Home Page)
+![Dashboard](https://github.com/dhruvakashyap73/EventPilot/blob/main/Screenshots/Home_Page.png)
+
+### 🔹 Event Tracker
+![Dashboard](https://github.com/dhruvakashyap73/EventPilot/blob/main/Screenshots/Event_Tracker.png)
+
+### 🔹 Recorder Events
+![Dashboard](https://github.com/dhruvakashyap73/EventPilot/blob/main/Screenshots/Recorder_Events.png)
+
+### 🔹 Attendees Tracker
+![Dashboard](https://github.com/dhruvakashyap73/EventPilot/blob/main/Screenshots/Atendees_Tracker.png)
+
+### 🔹 Task Tracker
+![Dashboard](https://github.com/dhruvakashyap73/EventPilot/blob/main/Screenshots/Task_tracker.png)
 
 
 ---
