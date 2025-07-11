@@ -1,0 +1,250 @@
+/* Outer container with a white background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background-color 0.5s ease-in-out; /* Smooth background transition */
+}
+
+/* Outer container background */
+.outer-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white !important;  /* Use !important to override other conflicting styles */
+}
+
+/* Header Styling with Blue */
+header {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards; /* Smooth fade-in effect */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Section Titles with Blue */
+.section-title {
+    color: #007bff; /* Blue color */
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 0.5s; /* Smooth fade-in for section titles */
+}
+
+/* Form Styling */
+.form-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 1s; /* Smooth fade-in effect for form */
+}
+
+/* Event Form Styling */
+.event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Label Styling */
+.form-label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Form Input Styling */
+.form-input {
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth focus effect */
+}
+
+.form-input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4); /* Smooth glow effect */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Submit Button (Save Event) Styling */
+.submit-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff; /* Blue background */
+    border: none;
+    border-radius: 5px; /* Smooth rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.03); /* Slight zoom effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.submit-button:active {
+    background-color: #004085; /* Even darker blue when clicked */
+    transform: scale(0.97); /* Press-in effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow reduction */
+}
+
+/* Table Section Styling */
+.table-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* Events Table Styling */
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.events-table th, .events-table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.events-table th {
+    background-color: #007bff; /* Blue header */
+    color: white;
+    text-transform: uppercase;
+}
+
+.events-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.events-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Edit and Delete Button Styling */
+.edit-button, .delete-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color: #00ff2f;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #09b300;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #b21f2d;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 2.5s; /* Smooth fade-in for footer */
+}
+
+footer .back-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #f3f2f5;
+    color: rgb(0, 123, 255); /* Blue color */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer .back-btn:hover {
+    background-color: #0056b3; /* Darker blue */
+    color: white;
+    transform: scale(1.05);
+}
+
+footer .back-btn:active {
+    background-color: #0056b3;
+    color: #f1f5fc;
+    transform: scale(0.95);
+}
+
+/* Logout Link Styling */
+#logout {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #f44336; /* Red color */
+    background-color: white;
+    border: 2px solid #f44336;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+#logout:hover {
+    background-color: #f44336;
+    color: white;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+#logout:active {
+    background-color: #d32f2f; /* Darker red on click */
+    transform: scale(0.95); /* Press-in effect */
+}

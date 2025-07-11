@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/Login.css">
+</head>
+
+<body>
+    <!-- Outer div to wrap the entire login box -->
+    <div class="outer-container">
+        <!-- Section with background image -->
+        <div class="section">
+            <!-- Login container -->
+            <div class="login-container">
+                <h2 class="login-header">Login</h2>
+                <form action="/login" method="POST" class="login-form">
+                    <div class="input-group">
+                        <input type="text" name="username" id="username" class="input-field" placeholder="Enter your username" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="password" id="password" class="input-field" placeholder="Enter your password" required>
+                    </div>
+                    <div class="submit-group">
+                        <input type="submit" value="Login" name="submit" class="submit-btn">
+                    </div>
+                </form>
+                <div class="error-message">
+                    {% if msg %}
+                    <p class="error-text">{{ msg }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="/static/Tasks.css">
+</head>
+<body>
+    <header>
+        <h1>Task Tracker</h1>
+    </header>
+    <main>
+        <!-- Add Task Form -->
+        <form method="POST" action="{{ url_for('tasks_page') }}" class="task-form">
+            <h2>Add Task</h2>
+            <label for="name">Task Name:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="deadline">Deadline:</label>
+            <input type="date" name="deadline" id="deadline" required>
+            <label for="status">Status:</label>
+            <select name="status" id="status">
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <label for="attendee">Assign to Attendee:</label>
+            <select name="attendee_id" id="attendee">
+                {% for attendee in attendees %}
+                <option value="{{ attendee.id }}">{{ attendee.name }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <!-- Tasks Table -->
+        <h2>All Tasks</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Assigned To</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for task in tasks %}
+                <tr>
+                    <td>{{ task.name }}</td>
+                    <td>{{ task.deadline }}</td>
+                    <td>{{ task.status }}</td>
+                    <td>{{ task.attendee_name }}</td>
+                    <td>
+                        <!-- Update status button with correct classes -->
+                        <a href="{{ url_for('update_task_status', task_id=task.id, status='Completed') }}">
+                            <button class="completed-btn"> Completed</button>
+                        </a>
+                        <a href="{{ url_for('update_task_status', task_id=task.id, status='Pending') }}">
+                            <button class="pending-btn"> Pending</button>
+                        </a>
+                        
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+    <!-- Back to Dashboard Button -->
+    <footer>
+        <a href="{{ url_for('home_page') }}">
+            <button class="back-btn">Back to Dashboard</button>
+        </a>
+        <a id="logout" href="{{ url_for('logout') }}">Logout</a>
+    </footer>
+</body>
+</html>

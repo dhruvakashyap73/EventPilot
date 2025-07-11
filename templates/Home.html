@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/Home.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <h1>Event Management Dashboard</h1>
+    </header>
+
+    <main>
+        <!-- Central Box for Dashboard -->
+        <div class="dashboard-box">
+            <h2>Manage Your Events, Attendees, and Tasks</h2>
+            <div class="dashboard-container">
+                <!-- Events Section -->
+                <div class="dashboard-item">
+                    <a href="{{ url_for('events_page') }}">
+                        <button class="dashboard-btn">Events</button>
+                    </a>
+                </div>
+                
+                <!-- Attendees Section -->
+                <div class="dashboard-item">
+                    <a href="{{ url_for('attendees_page') }}">
+                        <button class="dashboard-btn">Attendees</button>
+                    </a>
+                </div>
+                
+                <!-- Task Tracker Section -->
+                <div class="dashboard-item">
+                    <a href="{{ url_for('tasks_page') }}">
+                        <button class="dashboard-btn">Tracker</button>
+                    </a>
+                </div>
+
+                <!-- Description Paragraph -->
+                <p>
+                    An Event Management Dashboard is a comprehensive platform designed to facilitate the planning, organization, and management of events. It allows users to create, update, and delete events while providing details such as event name, location, description, and date. The dashboard manages attendee registration and tracking, enabling the assignment of attendees to specific events. It also incorporates task tracking, ensuring event-related tasks can be assigned, monitored, and updated with statuses like "Pending" or "Completed." With real-time insights and user-friendly interfaces, it streamlines the overall event management process. The dashboard offers seamless integration, improving coordination and productivity for organizers.
+                </p>
+            </div>
+        </div>
+
+        <!-- Logout Button -->
+        <div>
+            <a id="logout" href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </main>
+</body>
+</html>

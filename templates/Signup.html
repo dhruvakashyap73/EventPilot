@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="/static/Signup.css">
+</head>
+<body>
+    <div class="outer-container"> <!-- Changed class to outer-container for gradient background -->
+        <div class="signup-container">
+            <form action="/" method="POST" class="signup-form">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input type="text" name="username" id="username" class="input-field" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" id="password" class="input-field" placeholder="Enter your password" required>
+                </div>
+                <div class="submit-btn-container">
+                    <input type="submit" value="Sign Up" name="submit" class="submit-btn">
+                </div>
+            </form>
+
+            <div class="message">
+                {% if msg %}
+                    <p class="msg-text">{{ msg }}</p>
+                {% endif %}
+            </div>
+
+            <!-- Text for already a member -->
+            <div class="login-link">
+                <p>Already a member? 
+                    <a href="{{ url_for('login') }}">
+                        <button class="login-btn">Login here</button>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

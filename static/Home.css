@@ -1,0 +1,114 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Soft background color */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #af4c4c; /* Rich red background */
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font size for prominence */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 2px; /* Slight spacing for style */
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px; /* Consistent spacing between items */
+}
+
+/* Individual Dashboard Items */
+.dashboard-item {
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 200px; /* Make items responsive */
+    max-width: 250px; /* Limit the item width */
+}
+
+/* Dashboard Buttons */
+.dashboard-btn {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(18, 175, 76);
+    background-color: #e2f0e2; /* Vibrant green */
+    border:2px solid #3bcc3b;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.dashboard-btn:hover {
+    background-color: #45a049;
+    color:#f8f9fa; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.dashboard-btn:active {
+    background-color: #3e8e41; /* Even darker green on click */
+    transform: scale(0.95); /* Press-in effect */
+}
+
+/* Logout Button Styling */
+#logout {
+    position: fixed;   /* Fixes the position to the viewport */
+    bottom: 20px;      /* 20px from the bottom of the page */
+    right: 20px;       /* 20px from the right edge of the page */
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #f44336;     /* Red color */
+    background-color: white;  /* White background */
+    border: 2px solid #f44336; /* Red border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+#logout:hover {
+    background-color: #f44336;  /* Red background on hover */
+    color: white;  /* Change text to white on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+#logout:active {
+    background-color: #d32f2f; /* Darker red on click */
+    transform: scale(0.95); /* Press-in effect */
+}
+
+/* Paragraph Styling */
+p {
+    color: #b58f8f; /* Default paragraph color */
+    font-size: 1.2rem;
+    margin: 15px auto; /* Center horizontally */
+    line-height: 1.6; /* Improves readability */
+    text-align: justify; /* Aligns text evenly on both sides */
+    background-color: #f4f6f9; /* Light gray background for the paragraph */
+    padding: 10px 15px;
+    border-radius: 5px; /* Smooth rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth transition on background color */
+    max-width: calc(100% - 4cm); /* Reduce width by 1cm from each side */
+}
+
+p:hover {
+    background-color: #f4f6f9; /* Lighter gray background on hover */
+}
+

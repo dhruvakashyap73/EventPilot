@@ -1,0 +1,240 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #221f1f;
+    transition: background-color 0.5s ease-in-out; /* Smooth background transition */
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards; /* Smooth fade-in effect for the header */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 0.5s; /* Smooth fade-in effect with delay */
+}
+
+h2 {
+    color: #007bff; /* Blue color */
+    margin-bottom: 0.6rem;
+    text-align: center;
+}
+
+/* Form Styling */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    background-color:#f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 1s; /* Smooth fade-in effect for form */
+}
+
+/* Buttons with smoother transitions */
+.task-form input,
+.task-form select,
+.task-form button {
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Added transform for smoother transition */
+}
+
+.task-form input:focus,
+.task-form select:focus {
+    border-color: #007bff; /* Blue color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+    transform: scale(1.05); /* Slight zoom effect when focused */
+}
+
+/* Button smoothness on hover */
+.task-form button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Added smooth transition on hover */
+}
+
+.task-form button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 1.5s; /* Smooth fade-in for table */
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+table th {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Adjusted Actions column width */
+table td:nth-child(5) {
+    width: 250px; /* Reducing width of Actions column */
+    text-align: center; /* Center-aligning buttons in Actions column */
+}
+
+/* Task Status Buttons */
+.completed-btn, .pending-btn {
+    font-size: 0.9rem; /* Smaller font size */
+    padding: 0.6rem 1rem; /* Reduced padding for smaller size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-right: 1rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 2s; /* Smooth fade-in for status buttons */
+}
+
+.completed-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.completed-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.completed-btn:active {
+    background-color: #1e7e34;
+    transform: scale(0.95);
+}
+
+.pending-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.pending-btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.pending-btn:active {
+    background-color: #d39e00;
+    transform: scale(0.95);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 2.5s; /* Smooth fade-in for footer */
+}
+
+footer .back-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #f3f2f5;
+    color: rgb(0, 123, 255); /* Blue color */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer .back-btn:hover {
+    background-color: #0056b3; /* Darker blue */
+    color: white;
+    transform: scale(1.05);
+}
+
+footer .back-btn:active {
+    background-color: #0056b3;
+    color: #f1f5fc;
+    transform: scale(0.95);
+}
+
+/* Logout Button Styling */
+#logout {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #f44336;
+    background-color: white;
+    border: 2px solid #f44336;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#logout:hover {
+    background-color: #f44336;
+    color: white;
+    transform: scale(1.05);
+}
+
+#logout:active {
+    background-color: #d32f2f;
+    transform: scale(0.95);
+}
