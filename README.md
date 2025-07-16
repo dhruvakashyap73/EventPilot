@@ -47,8 +47,3 @@
 | HTML/CSS   | Frontend structure and styling          |
 | Jinja2     | Templating engine for dynamic content   |
 
----
-
-### 👨🏻‍💻 Developed By
-**Dhruva Kashyap**<br>
-dhruvakashyap73@gmail.com
